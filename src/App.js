@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import PdfViewer from './components/PdfViewer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Data Extraction with Gemini AI</h1>  {/* Optional: You can add a header if you'd like */}
       </header>
+      <main>
+        <PdfViewer /> {/* Render the PdfViewer component here */}
+      </main>
     </div>
   );
 }
